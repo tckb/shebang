@@ -1,10 +1,14 @@
 #!/usr/local/bin/python2
+# Simple python script for face detection
+# Dependencies: opencv
+# Usuage: face_detect.py <image_file.jpg> <output_folder>
+
 import cv2
 import sys
 import os.path
 import numpy as np
 
-print 'detecting face for ' +sys.argv[1]
+print 'Detecting face for ' +sys.argv[1]
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
 img = cv2.imread(sys.argv[1])
