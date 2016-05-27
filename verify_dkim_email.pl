@@ -1,8 +1,12 @@
 #!/usr/bin/perl
 # Author: tckb <chandra.tungathurthi@rwth-aachen.de>
 # Script to extract and validate DKIM signatures
+
+# Install SSL dev ibraries: 
+# aptitude install libssl-dev
 # Install DKIM Verifier module before you run the script
 # sudo perl -MCPAN -e "install Mail::DKIM::Verifier"
+
 # Usage: ./verify_dkim_email.pl < raw_email_data.txt > dkim_signatures.text
 use Mail::DKIM::Verifier;
 
